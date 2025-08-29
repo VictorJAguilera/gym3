@@ -1,0 +1,192 @@
+[
+  {
+    "id": "seed_bench_press",
+    "name": "Bench Press",
+    "image": "https://www.lyfta.app/thumbnails/00251201.jpg",
+    "bodyPart": "Chest",
+    "primaryMuscles": "Pectoralis Major Sternal Head",
+    "secondaryMuscles": "Deltoid Anterior, Pectoralis Major Clavicular Head, Triceps Brachii",
+    "equipment": "Barbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_triceps_pushdown",
+    "name": "Triceps Pushdown",
+    "image": "https://www.lyfta.app/thumbnails/02411201.jpg",
+    "bodyPart": "Triceps, Upper Arms",
+    "primaryMuscles": "Triceps Brachii",
+    "secondaryMuscles": "",
+    "equipment": "Cable",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_incline_bench_press",
+    "name": "Incline Bench Press",
+    "image": "https://www.lyfta.app/thumbnails/03141201.jpg",
+    "bodyPart": "Chest",
+    "primaryMuscles": "Pectoralis Major Clavicular Head",
+    "secondaryMuscles": "Deltoid Anterior, Triceps Brachii",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_lateral_raise",
+    "name": "Lateral Raise",
+    "image": "https://www.lyfta.app/thumbnails/03341201.jpg",
+    "bodyPart": "Shoulders",
+    "primaryMuscles": "Deltoid Lateral",
+    "secondaryMuscles": "Deltoid Anterior, Serratus Anterior",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_full_squat",
+    "name": "Full Squat",
+    "image": "https://www.lyfta.app/thumbnails/00431201.jpg",
+    "bodyPart": "Quadriceps, Thighs",
+    "primaryMuscles": "Gluteus Maximus, Quadriceps",
+    "secondaryMuscles": "Adductor Magnus, Soleus",
+    "equipment": "Barbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_straight_back_seated_row",
+    "name": "Straight Back Seated Row",
+    "image": "https://www.lyfta.app/thumbnails/02391201.jpg",
+    "bodyPart": "Back",
+    "primaryMuscles": "Infraspinatus, Latissimus Dorsi, Teres Major, Teres Minor, Trapezius Lower & Middle Fibers",
+    "secondaryMuscles": "Brachialis, Brachioradialis, Deltoid Posterior, Pectoralis Major Sternal Head",
+    "equipment": "Cable",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_barbell_curl",
+    "name": "Barbell Curl",
+    "image": "https://www.lyfta.app/thumbnails/00311201.jpg",
+    "bodyPart": "Biceps, Upper Arms",
+    "primaryMuscles": "Biceps Brachii",
+    "secondaryMuscles": "Brachialis, Brachioradialis",
+    "equipment": "Barbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_bent_over_row",
+    "name": "Bent Over Row",
+    "image": "https://www.lyfta.app/thumbnails/00271201.jpg",
+    "bodyPart": "Back",
+    "primaryMuscles": "Infraspinatus, Latissimus Dorsi, Teres Major, Teres Minor, Trapezius Middle & Upper Fibers",
+    "secondaryMuscles": "Brachialis, Brachioradialis, Deltoid Posterior",
+    "equipment": "Barbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_one_arm_bent_over_row",
+    "name": "One Arm Bent-over Row",
+    "image": "https://www.lyfta.app/thumbnails/00281201.jpg",
+    "bodyPart": "Back",
+    "primaryMuscles": "Latissimus Dorsi, Teres Major",
+    "secondaryMuscles": "Biceps Brachii, Deltoid Posterior",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_push_up",
+    "name": "Push-up",
+    "image": "https://www.lyfta.app/thumbnails/00071201.jpg",
+    "bodyPart": "Chest",
+    "primaryMuscles": "Pectoralis Major",
+    "secondaryMuscles": "Triceps Brachii, Deltoid Anterior, Serratus Anterior, Core",
+    "equipment": "Body weight",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_lat_pulldown",
+    "name": "Bar Lateral Pulldown",
+    "image": "https://www.lyfta.app/thumbnails/02181201.jpg",
+    "bodyPart": "Back",
+    "primaryMuscles": "Latissimus Dorsi",
+    "secondaryMuscles": "Biceps Brachii, Teres Major, Rhomboids",
+    "equipment": "Cable",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_dumbbell_bench_press",
+    "name": "Dumbbell Bench Press",
+    "image": "https://www.lyfta.app/thumbnails/00661201.jpg",
+    "bodyPart": "Chest",
+    "primaryMuscles": "Pectoralis Major",
+    "secondaryMuscles": "Deltoid Anterior, Triceps Brachii",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_hammer_curl",
+    "name": "Hammer Curl",
+    "image": "https://www.lyfta.app/thumbnails/03101201.jpg",
+    "bodyPart": "Biceps, Upper Arms",
+    "primaryMuscles": "Brachialis, Brachioradialis",
+    "secondaryMuscles": "Biceps Brachii",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_alternate_biceps_curl",
+    "name": "Alternate Biceps Curl",
+    "image": "https://www.lyfta.app/thumbnails/03091201.jpg",
+    "bodyPart": "Biceps, Upper Arms",
+    "primaryMuscles": "Biceps Brachii",
+    "secondaryMuscles": "Brachialis, Brachioradialis",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_seated_leg_curl",
+    "name": "Lever Seated Leg Curl",
+    "image": "https://www.lyfta.app/thumbnails/01011201.jpg",
+    "bodyPart": "Hamstrings, Thighs",
+    "primaryMuscles": "Hamstrings",
+    "secondaryMuscles": "Gastrocnemius",
+    "equipment": "Leverage machine",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_standing_calf_raise",
+    "name": "Standing Calf Raise",
+    "image": "https://www.lyfta.app/thumbnails/01211201.jpg",
+    "bodyPart": "Calves",
+    "primaryMuscles": "Gastrocnemius",
+    "secondaryMuscles": "Soleus",
+    "equipment": "Machine/Smith o Peso corporal",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_dumbbell_incline_curl",
+    "name": "Dumbbell Incline Curl",
+    "image": "https://www.lyfta.app/thumbnails/03081201.jpg",
+    "bodyPart": "Biceps, Upper Arms",
+    "primaryMuscles": "Biceps Brachii (long head)",
+    "secondaryMuscles": "Brachialis, Brachioradialis",
+    "equipment": "Dumbbell",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_lever_seated_fly",
+    "name": "Lever Seated Fly",
+    "image": "https://www.lyfta.app/thumbnails/00181201.jpg",
+    "bodyPart": "Chest",
+    "primaryMuscles": "Pectoralis Major",
+    "secondaryMuscles": "Deltoid Anterior",
+    "equipment": "Leverage machine",
+    "isCustom": 0
+  },
+  {
+    "id": "seed_cable_standing_fly",
+    "name": "Cable Standing Fly",
+    "image": "https://www.lyfta.app/thumbnails/03351201.jpg",
+    "bodyPart": "Chest",
+    "primaryMuscles": "Pectoralis Major Sternal Head",
+    "secondaryMuscles": "Deltoid Anterior, Pectoralis Major Clavicular Head",
+    "equipment": "Cable",
+    "isCustom": 0
+  }
+]
