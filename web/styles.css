@@ -1,0 +1,214 @@
+/* =======================
+   GymBuddy — estilos (móvil primero)
+   Colores: negro/gris + acentos rojos. Tipografía Inter.
+   ======================= */
+:root{
+  --bg:#0b0b0c;
+  --card:#141416;
+  --card-2:#1c1c1f;
+  --muted:#9aa0a6;
+  --text:#e9ecef;
+  --accent:#ff2d2d;
+  --accent-2:#ff4d4d;
+  --border:#2a2a2f;
+  --radius:18px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.app{
+  min-height:100%;
+  padding: 16px 16px 96px;
+}
+
+.header{
+  position:sticky; top:0; z-index:5;
+  background:linear-gradient(180deg, rgba(11,11,12,0.95), rgba(11,11,12,0.75) 60%, transparent);
+  backdrop-filter: blur(6px);
+  margin: -16px -16px 12px;
+  padding: 14px 16px 8px;
+  border-bottom:1px solid var(--border);
+}
+
+.title{
+  display:flex; align-items:center; gap:10px;
+  font-weight:800; letter-spacing:.2px;
+}
+.badge{font-size:12px; color:var(--muted)}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+}
+@media(min-width:720px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1024px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+
+.card{
+  background:linear-gradient(180deg,var(--card),var(--card-2));
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  padding:14px;
+}
+.card:hover{border-color:#34343a}
+
+.card-row{display:flex; align-items:center; gap:12px}
+.card img.thumb{width:56px; height:56px; object-fit:cover; border-radius:16px; border:1px solid var(--border)}
+.card h3{margin:0 0 6px; font-size:16px}
+.card p{margin:0; color:var(--muted); font-size:12px; line-height:1.35}
+
+.kbd{font-size:11px; border:1px solid var(--border); padding:2px 6px; border-radius:8px; background:#101011; color:#c3c6cc}
+
+.empty{
+  text-align:center; padding:48px 12px;
+  border:1px dashed var(--border);
+  border-radius: var(--radius);
+  color:var(--muted);
+}
+.empty .cta{margin-top:12px}
+.btn{
+  appearance:none; border:none; outline:none; cursor:pointer;
+  background: var(--accent);
+  color:#fff; padding:12px 14px; border-radius:14px;
+  font-weight:700; letter-spacing:.2px;
+  transition: transform .06s ease, background .2s ease;
+}
+/* Sin sombras en botones */
+.btn:active{transform:translateY(1px)}
+.btn.secondary{background:#202024; color:#fff; border:1px solid var(--border)}
+.btn.block{display:block; width:100%}
+
+.fab{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18px;
+  width:64px; height:64px; border-radius: 50%;
+  display:grid; place-items:center;
+  border:none; background: var(--accent);
+  color:#fff; z-index: 9;
+}
+.fab svg{pointer-events:none; fill:currentColor}
+
+.icon-btn{
+  appearance:none; background:#191a1c; border:1px solid var(--border); color:#fff;
+  border-radius:12px; padding:8px; cursor:pointer;
+}
+.icon-btn svg{fill:#fff}
+
+/* Hero cards (home) */
+.hero-grid{display:grid; gap:12px}
+.hero-card{
+  position:relative;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  min-height:180px;
+  display:flex; align-items:flex-end;
+  background:#101012;
+}
+.hero-card .bg{
+  position:absolute; inset:0;
+  background-size:cover; background-position:center;
+  filter:brightness(.6);
+}
+.hero-card .overlay{
+  position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0) 40%, rgba(0,0,0,.5) 100%);
+}
+.hero-card .label{
+  position:relative; z-index:2; padding:16px; font-weight:800; font-size:22px;
+}
+
+.toolbar{display:flex; gap:8px; align-items:center; justify-content:space-between; margin:8px 0 14px}
+
+.input, .select, .chips{
+  background:#101012; color:#fff; border:1px solid var(--border);
+  border-radius:12px; padding:12px 12px;
+  width:100%;
+}
+.input::placeholder{color:#6b6f76}
+.row{display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+
+.chips{display:flex; flex-wrap:wrap; gap:8px; padding:8px}
+.chip{border:1px solid var(--border); border-radius:999px; padding:6px 10px; font-size:12px; color:#c7c7cb; cursor:pointer; background:#16161a}
+.chip.active{background:rgba(255,45,45,.1); border-color:var(--accent); color:#fff}
+
+.exercise-card{display:flex; gap:10px; align-items:center}
+.exercise-card .info{flex:1 1 auto}
+.exercise-card .actions{display:flex; gap:8px; align-items:center}
+
+.sets{margin-top:10px; display:flex; flex-direction:column; gap:8px}
+.set{display:grid; grid-template-columns: 1fr 1fr auto; gap:8px; align-items:center}
+.set input{background:#0f0f11; border:1px solid var(--border); color:#fff; border-radius:10px; padding:10px 12px; width:100%}
+.small{font-size:12px; color:var(--muted)}
+
+.nav{display:flex; align-items:center; gap:8px; margin-bottom:6px}
+.nav button{background:#191a1c}
+.breadcrumb{font-size:12px; color:var(--muted)}
+
+.modal{position:fixed; inset:0; display:grid; place-items:center}
+.modal.hidden{display:none}
+.modal-backdrop{position:absolute; inset:0; background: rgba(0,0,0,.6)}
+.modal-card{
+  position:relative; z-index:2; width: min(920px, 96vw); max-height: 92vh; overflow:auto;
+  background: linear-gradient(180deg,var(--card),var(--card-2));
+  border:1px solid var(--border); border-radius: 24px;
+}
+.modal-header{display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--border)}
+.modal-content{padding:14px}
+.modal .grid{grid-template-columns: 1fr}
+@media(min-width:720px){ .modal .grid{grid-template-columns: repeat(2,1fr)} }
+
+.footer-note{margin-top:18px; text-align:center; color:#9aa0a6; font-size:12px}
+
+.tag{display:inline-flex; align-items:center; gap:6px; padding:4px 8px; background:#101012; border:1px solid var(--border); border-radius:999px; font-size:11px; color:#c9c9cd}
+.tag .dot{width:8px; height:8px; border-radius:50%; background:var(--accent)}
+
+.hr{height:1px; background:var(--border); margin:10px 0}
+
+/* --- Workout view --- */
+.workout-header{position:sticky;top:0;z-index:6;background:linear-gradient(180deg, rgba(11,11,12,0.95), rgba(11,11,12,0.75) 60%, transparent);backdrop-filter: blur(6px);margin:-16px -16px 12px;padding:14px 16px 8px;border-bottom:1px solid var(--border)}
+.workout-title{display:flex;align-items:center;gap:10px;font-weight:800}
+.workout-sub{font-size:12px;color:var(--muted)}
+
+.toggle{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;border:1px solid var(--border);cursor:pointer;background:#17181a;user-select:none}
+.toggle .check{font-weight:800;font-size:14px;line-height:1}
+.toggle{justify-content:center;width:48px}
+.toggle.complete{background:rgba(46, 204, 113, .15);border-color:#2ecc71}
+.toggle.complete .check{color:#2ecc71}
+.toggle:not(.complete) .check{color:#6e737a}
+
+.exercise-shell{position:relative}
+.side-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  display:flex; align-items:center; justify-content:center;
+  width:40px; height:56px; border-radius:12px; background:#191a1c; border:1px solid var(--border);
+}
+.side-nav.left{left:-8px}
+.side-nav.right{right:-8px}
+
+.workout-nav{display:flex;justify-content:space-between;align-items:center;margin:6px 0 8px}
+.workout-progress{font-size:12px;color:var(--muted); display:flex; flex-direction:column; align-items:flex-end}
+.stopwatch{font-size:12px;color:#cfd3da; margin-top:2px}
+
+.finish-card{text-align:center;padding:24px;border:1px dashed var(--border);border-radius:var(--radius);background:linear-gradient(180deg,#121214,#0d0d10)}
+
+.actions-bottom{display:flex;gap:10px;justify-content:center;margin-top:16px}
+.actions-bottom .btn{min-width:160px}
+
+.card .btn.icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;padding:0}
+.card .btn.icon.secondary{background:#202024;border:1px solid var(--border)}
+.card .btn.icon svg{fill:#fff}
